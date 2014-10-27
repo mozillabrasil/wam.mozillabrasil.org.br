@@ -1,9 +1,8 @@
 var WAM = {
     support: Modernizr.csstransitions && Modernizr.csstransforms,
-    language : null,
+    language: null,
     onLocalized: function () {
         var $l10n = document.webL10n;
-        WAM.language = $.trim($(this).data('l10n')) ? $(this).data('l10n') : WAM.language   ;
         $l10n.setLanguage(WAM.language);
     },
     onSubmitNewsletter: function () {
@@ -31,7 +30,7 @@ var WAM = {
                 if ($('body').hasClass('menu-opened')) {
                     WAM.onToggleMenu();
                 }
-            }else{
+            } else {
                 console.log($object);
                 console.log($method);
                 console.log($value);
@@ -65,7 +64,10 @@ var WAM = {
         window.onhashchange = self.onHashChange;
         window.onhashchange();
         $(window).scroll(self.onScroll);
-        $('.pm-dropdown.pm-language-selector-menu .pm-dropmenu-active a').click(self.onLocalized);
+        $('.pm-dropdown.pm-language-selector-menu .pm-dropmenu-active a').click(function () {
+            WAM.language = $(this).data('l10n');
+            self.onLocalized();
+        });
         $('.pm-dropdown.pm-language-selector-menu .pm-dropmenu-active a:first').click();
         $('#pm-footer-subscribe').submit(self.onSubmitNewsletter);
         $('#fox-loading #fox').sprite({fps: 12, no_of_frames: 44, rewind: true});
