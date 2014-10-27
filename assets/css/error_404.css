@@ -1,0 +1,108 @@
+html, body{
+
+    height:100%;
+    background:#186aa9 url(../images/errors/sky-background.png) top repeat-x;	
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+img{
+    border:0px none;	
+    outline:none;
+}
+div.planet{
+    bottom: -700px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    text-align: center;
+}
+div.fox-bubble{
+}
+div.planet>img#planet{
+    width:960px;
+}
+img#fox{
+    left: calc(50% - 241px);
+    position: absolute;
+    top: -130px;
+    z-index: 9999;
+}
+div.fox-bubble{
+    font-size:14px;
+    line-height:1.5;
+    font-style:italic;
+    height:179px;
+    width:246px;
+    background:url(../images/errors/bubble.png) top center no-repeat;
+    padding:20px 0px;
+    bottom:0px;
+    z-index:999;
+    opacity:0;
+    color:#555555;
+    font-size:14px;
+    text-shadow:1px 1px 0 #ffffff;
+    position: absolute;
+    top: -50%;
+    left: 60%;
+    background-size: 100%;
+
+}
+div.fox-bubble>p{
+
+    text-align:center;
+    padding:0px 35px;	
+
+}
+div.bubble-options{
+
+    opacity:0;
+    visibility:hidden;
+    display:none;
+
+}
+@media only screen and (max-width: 960px) {
+    div.planet{
+        bottom:-360px;
+    }
+    div.planet>img#planet{
+        width:560px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    div.planet>img#planet{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 479px){
+    div.planet{
+        bottom:-130px;
+    }
+    div.planet>img#planet{
+        width:265px;
+    }
+    div.fox-bubble{
+        width: 140px;
+        left: 45%;
+    }
+    div.fox-bubble p{
+        font-size: 4vw;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        top: -12px;
+        width: 93%;
+        left: 3px;
+    }
+    div.fox-bubble img{
+        display: none;
+    }
+    img#fox{
+        left: 10%;
+        top: -20%;
+        width: calc(100% - 70px);
+    }
+}
