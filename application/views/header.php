@@ -2,11 +2,24 @@
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+        <title>WAM</title>
+        <meta name="viewport" content="width=device-width, minimal-ui, initial-scale=1.0, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="description" content=""/>
         <meta name="author" content=""/>
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/favicon.png"/>
-        <title>WAM</title>
+        <!-- ICONS -->
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/images/icon/icon-16.png"/>
+        <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/images/icon/icon-16.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo base_url(); ?>assets/images/icon/icon-57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url(); ?>assets/images/icon/icon-72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>assets/images/icon/icon-76.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url(); ?>assets/images/icon/icon-114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="<?php echo base_url(); ?>assets/images/icon/icon-120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url(); ?>assets/images/icon/icon-144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="<?php echo base_url(); ?>assets/images/icon/icon-152.png">
+        <link rel="apple-touch-startup-image" href="<?php echo base_url(); ?>assets/images/icon/icon-152.png">
+        <!-- bootstrap css -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css"/>
         <!-- main css -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/main.css"/>
