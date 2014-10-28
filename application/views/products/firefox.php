@@ -9,13 +9,9 @@
     <div class="row">
         <div class="col-lg-12 pm-sidebar">
             <div class="pm-widget">
-                <h6 data-l10n-id="" class="col-lg-6 line-height-52px" style="line-height: 52px;">
-                    Rápido, seguro ... simples
-                </h6>
+                <h6 data-l10n-id="PRODUCTS_FIREFOX_TITLE" class="col-lg-6 line-height-52px" style="line-height: 52px;"></h6>
                 <h6 class="col-lg-6 text-right">
-                    <a data-l10n-id="" href="http://www.getfirefox.com/" target="_new" class="pm-slide-btn animated no-margin">
-                        Quero fazer o download
-                    </a>
+                    <a data-l10n-id="PRODUCTS_FIREFOX_DESCRIPTION" href="http://www.getfirefox.com/" target="_new" class="pm-slide-btn animated no-margin"></a>
                 </h6>
             </div>
         </div>
@@ -23,8 +19,8 @@
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 pm-sidebar text-center">
             <div class="pm-widget">
-                <h6 data-l10n-id="">Trabalha conforme o seu ritmo</h6>
-                <p data-l10n-id="" class="text"> A forma como você usa a Web é única. Você pode modificar o Firefox conforme suas necessidades. Remova o que você não usa, mantenha o que é útil e organize como quiser. </p>
+                <h6 data-l10n-id="PRODUCTS_FIREFOX_BROWSER_TITLE"></h6>
+                <p data-l10n-id="PRODUCTS_FIREFOX_BROWSER_DESCRIPTION" class="text"></p>
                 <div class="animation-wrapper" id="browser">
                     <div class="stage">
                         <div id="toolbar">
@@ -48,7 +44,7 @@
                                 <div class="panel-footer" id="panel-footer-on"></div>
                                 <div class="panel-footer" id="panel-footer">
                                     <a role="button" href="#" id="flexible-replay">
-                                        <span data-l10n-id="">Ver novamente</span>
+                                        <span data-l10n-id="PRODUCTS_FIREFOX_BROWSER_BUTTON"></span>
                                         <div id="panel-replay"></div>
                                     </a>
                                 </div>
