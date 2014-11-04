@@ -31,7 +31,6 @@ class MY_Model extends CI_Model {
         $master_key = '';
 
         ParseClient::initialize($app_id, $rest_key, $master_key);
-        $this->sessao = $this->session->userdata;
     }
 
     public function loadParseQuery($Class) {

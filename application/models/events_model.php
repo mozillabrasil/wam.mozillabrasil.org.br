@@ -1,15 +1,13 @@
 <?php
 
-use Parse\ParseQuery;
-
-class Events_model extends CI_Model {
-
+class Events_model extends MY_Model {
+    
     function __construct() {
         parent::__construct();
     }
 
     function get_last($limit = 5, $offset = 1) {
-        $query = new ParseQuery("Events");
+        $query = $this->loadParseQuery("Events");
         $query->descending("local_start");
         $query->limit($limit);
         $query->skip($offset * 5);
@@ -22,13 +20,13 @@ class Events_model extends CI_Model {
     }
 
     function get_all() {
-        $query = new ParseQuery("Events");
+        $query = $this->loadParseQuery("Events");
         $query->descending("local_start");
         return $query->find();
     }
 
     function get($objectId) {
-        $query = new ParseQuery("Events");
+        $query = $this->loadParseQuery("Events");
         return $query->get($objectId);
     }
 

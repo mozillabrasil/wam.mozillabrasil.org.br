@@ -1,15 +1,13 @@
 <?php
 
-use Parse\ParseQuery;
-
-class Emails_model extends CI_Model {
+class Emails_model extends MY_Model {
 
     function __construct() {
         parent::__construct();
     }
 
     function get_all() {
-        $query = new ParseQuery("Apps");
+        $query = $this->loadParseQuery("Apps");
         $query->ascending("name");
         return $query->find();
     }
