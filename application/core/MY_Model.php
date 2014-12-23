@@ -26,7 +26,7 @@ class MY_Model extends CI_Model {
     function __construct() {
         parent::__construct();
 
-        require_once 'parse.php';
+        include 'parse.php';
         
         ParseClient::initialize($app_id, $rest_key, $master_key);
     }
